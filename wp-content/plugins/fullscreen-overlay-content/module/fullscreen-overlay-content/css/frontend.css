@@ -1,0 +1,284 @@
+/* Overlay style */
+.fullscreen-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+
+/* Overlay closing cross */
+.fullscreen-overlay .fsoc-close-btn {
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	overflow: hidden;
+	outline: none;
+	z-index: 3243557;
+}
+
+/*=============================================================
+ 1. HUGE INC
+ ==============================================================*/
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	-moz-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	z-index: 3243556!important;
+}
+
+.overlay-hugeinc .fl-builder-content .fl-row-content-wrap {
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc .fl-builder-content .fl-row-content-wrap > * {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	-moz-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open .fl-builder-content .fl-row-content-wrap > * {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close .fl-builder-content .fl-row-content-wrap > * {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	-moz-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+/*=============================================================
+ 2. SCALE
+ ==============================================================*/
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+
+	z-index: 3243556!important;
+}
+
+/*=============================================================
+ 3. SIMPLE GENIE
+ ==============================================================*/
+.overlay-simple-genie {
+	visibility: hidden;
+	-webkit-transform: translateY(60%) scale(0);
+	transform: translateY(60%) scale(0);
+	-webkit-transition: -webkit-transform 0.4s, visibility 0s 0.4s;
+	transition: transform 0.4s, visibility 0s 0.4s;
+}
+
+.overlay-simple-genie.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%) scale(1);
+	transform: translateY(0%) scale(1);
+	-webkit-transition: -webkit-transform 0.64s;
+	transition: transform 0.64s;
+
+	z-index: 3243556!important;
+}
+
+/*=============================================================
+ 4. SLIDE DOWN
+ ==============================================================*/
+.overlay-slide-down {
+	visibility: hidden;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slide-down.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+
+	z-index: 3243556!important;
+}
+
+.overlay-slide-down .fl-builder-content *,
+.overlay-corner .fl-builder-content * {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/*=============================================================
+ 5. GENIE
+ ==============================================================*/
+.overlay-genie {
+	background: transparent;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.2s, visibility 0s 0.6s;
+	transition: opacity 0.3s 0.2s, visibility 0s 0.6s;
+}
+
+.overlay-genie.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+
+	z-index: 3243556!important;
+}
+
+.overlay-genie svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.overlay-genie .overlay-path {
+	fill: rgba(153,204,233,0.9);
+}
+
+.overlay-genie .fl-builder-content {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+	transition: opacity 0.3s 0.3s, transform 0.3s 0.3s;
+}
+
+.overlay-genie .fsoc-close-btn {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.overlay-genie.open .fl-builder-content,
+.overlay-genie.open .fsoc-close-btn {
+	opacity: 1;
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.overlay-genie.close .fl-builder-content,
+.overlay-genie.close .fsoc-close-btn {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+/*=============================================================
+ 6. DOOR
+ ==============================================================*/
+.overlay-door {
+	visibility: hidden;
+	width: 0;
+	left: 50%!important;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: width 0.5s 0.3s, visibility 0s 0.8s;
+	transition: width 0.5s 0.3s, visibility 0s 0.8s;
+}
+
+.overlay-door.open {
+	visibility: visible;
+	width: 100%;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+
+	z-index: 3243556!important;
+}
+
+.overlay-door .fl-builder-content,
+.overlay-door .fsoc-close-btn {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+}
+
+.overlay-door.open .fl-builder-content,
+.overlay-door.open .fsoc-close-btn {
+	opacity: 1;
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.overlay-door.close .fl-builder-content,
+.overlay-door.close .fsoc-close-btn {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+/*=============================================================
+ 7. CORNER
+ ==============================================================*/
+.overlay-corner {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateY(50px) translateX(50px);
+	transform: translateY(50px) translateX(50px);
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-corner.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+
+	z-index: 3243556!important;
+}
+
+/*=============================================================
+ 8. SLIDE LEFT TO RIGHT
+ ==============================================================*/
+.overlay-contentpush {
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-contentpush.open {
+	visibility: visible;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+
+	z-index: 3243556!important;
+}

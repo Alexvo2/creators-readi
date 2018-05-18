@@ -1,0 +1,53 @@
+= 1.1.1 - 31/01/2018 =
+Fixed - Builk action buttons dropped in 2nd line
+
+= 1.1 - 13/01/2018 =
+Fixed - Unable to click the settings icon
+
+= 1.0.9 - 15/12/2017 =
+Added - CSS editor form for individual module
+Added - Import/Export Settings option
+Added - Animation effect for mobile
+
+= 1.0.8 - 05/12/2017 =
+Added - Copy or Delete a column group
+
+= 1.0.7 - 03/12/2017 =
+Fixed - Breakpoint was working for Columns and Rows
+Added - Z-index feature under Advanced Tab
+
+= 1.0.6.1 - 02/12/2017 =
+Fixed - CSS was conflicting with theme CSS
+
+= 1.0.6 - 01/12/2017 =
+Added - Visibility feature for Modules
+Added - "Hide on expire Date" option in Visibility settings form
+Added - "Visible between date range" option in Visibility settings form
+
+= 1.0.5.2 - 30/11/2017 =
+Fixed - Breakpoint related all rows loading when visiting the page 
+
+= 1.0.5.1 - 29/11/2017 =
+Fixed - Breakpoint feature was not working on Themer Builder
+
+= 1.0.5 - 29/11/2017 =
+Rearrange the Row
+Added the visibiliy feature. You can hide the rows and columns based on Breakpoint value or save as draft or keep it in schedule mode
+
+= 1.0.4 - 21/11/2017 =
+At a time you can delete multiple rows
+At a time you can change the margin and/or padding of multiple columns
+At a time you can change the width and other things of multiple rows
+
+= 1.0.3 - 15/11/2017 =
+Fixed - Row was not removing when there have no columns
+Added - Reset Row Width feature for Row
+
+= 1.0.2 - 12/11/2017 =
+Fixed - PHP fatal error
+
+= 1.0.1 - 11/11/2017 =
+Fixed - JS file is not loading
+
+= 1.0 - 11/11/2017 =
+Initial Release

@@ -1,0 +1,50 @@
+v1.1.3
+# Improvement: Added `wp_schema_pro_link_to_frontpage` filter to remove home list item from BreadcrumbList schema.
+# Improvement: Added image-object case for the logo without width and height for article schema.
+# Improvement: Added `add_ratings_schema_pro_markup` filter and `wp_schema_pro_rating_shortcode` shortcode to add rating more than one time in page/post.
+# Improvement: Updated logo field as a common field in global setting for both organization and person schema.
+# Improvement: Support added for Mobile App & Web App categories in Software Application schema.
+# Improvement: Support added for 0 price schema field.
+# Fix: Time formate updated in schema markup.
+# Fix: Updated URL format Http to Https in schema's context type.
+
+v1.1.2
+# Improvement: ACF Pro compatibility implemented.
+# Fixed: Star rating conflict with WooCommerce.
+# Fixed: Undefined index meta-created schema wizard.
+# Fixed: Undefined function call 'get_pages'.
+
+v1.1.1
+# Added: `wp_schema_pro_default_markup` Filter to display Enable Schema Markup option on edit page/post.
+# Fixed: PHP notice: undefined `description` index.
+# Fixed: PHP notice: invalid argument passed in foreach.
+
+v1.1.0
+# Added: Setup Wizard to configure global schema step by step
+# Added: New Support for sitewide schema types: Organization/Person, AboutPage, ContactPage, Sitelink Search Box, Breadcrumb, Site Navigation Element.
+# Fixed: Schema not rendering on the frontpage.
+# Fixed: Frontpage meta fields not getting saved while Yoast SEO enabled.
+
+v1.0.3
+# Enhancement: Updated plugin name `All-in-one Schema Pro` to `Schema Pro`.
+# Enhancement: All Fiters prefix updated with `wp_schema_pro`.
+# Fixed: Image selection not working in edit post.
+
+v1.0.2
+# Enhancement: Listed all Country & Currency in related option.
+# Enhancement: Updated required & recommended schema fields for Course.
+# Fixed: Repeater fields value not getting saved on edit post/page.
+# Fixed: Fixed logo size issue on "Google Structured Data Testing Tool"
+# Fixed: Strip HTML markup from schema.
+
+v1.0.1
+# Enhancement: Updated field types for Fixed value in Schema Post.
+# Enhancement: Updated required & recommended schema fields for Book & VideoObject Schema. You should test your schema configurations if you are using one of these schemas.
+# Fixed: Telephone number field not accepting all telephone format
+# Fixed: Test Schema link having `http://` instead of `https://` when SSL is enabled.
+
+v1.0.0
+# New: "Accept User Rating" option added for aggregate ratings in Mapping options.
+
+v1.0.0-beta.3
+# Initial Release
